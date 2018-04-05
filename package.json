@@ -1,0 +1,28 @@
+{
+	"name": "timer",
+	"version": "1.0.0",
+	"description": "A basic JavaScript timer",
+	"author": "Emanuel Rabina <emanuelrabina@gmail.com>",
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ultraq/timer.git"
+	},
+	"keywords": [],
+	"module": "Timer.es.js",
+	"main": "Timer.cjs.js",
+	"scripts": {
+		"lint": "eslint '**/*.js'",
+		"build": "npm run build:cjs && npm run build:es",
+		"build:cjs": "BABEL_ENV=cjs babel Timer.js --out-file Timer.cjs.js --source-maps",
+		"build:es": "BABEL_ENV=es babel Timer.js --out-file Timer.es.js --source-maps",
+		"prepublish": "npm run build"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"eslint": "^4.19.1",
+		"eslint-config-ultraq": "^2.0.1"
+	}
+}

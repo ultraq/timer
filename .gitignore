@@ -1,0 +1,4 @@
+/.idea
+/node_modules
+Timer.cjs.js*
+Timer.es.js*
