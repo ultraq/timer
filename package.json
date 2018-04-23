@@ -1,6 +1,6 @@
 {
 	"name": "@ultraq/timer",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "A basic JavaScript timer",
 	"author": "Emanuel Rabina <emanuelrabina@gmail.com>",
 	"license": "Apache-2.0",
